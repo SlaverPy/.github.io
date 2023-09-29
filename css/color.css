@@ -1,0 +1,52 @@
+/* white */
+
+.text__white {
+  color: var(--color-white);
+}
+
+.bg_white {
+  background-color: var(--color-white);
+}
+
+.border_white {
+  border-color: var(--color-white);
+}
+
+/* Tiffany */
+
+.text__tiffany {
+  color: var(--color-tiffany);
+}
+
+.bg_tiffany {
+  background-color: var(--color-tiffany);
+}
+
+.border_tiffany {
+  border-color: var(--color-tiffany);
+}
+
+/* blue */
+.text__blue {
+  color: var(--color-blue);
+}
+
+.bg_blue {
+  background-color: var(--color-blue);
+}
+
+.border_blue {
+  border-color: var(--color-blue);
+}
+/* green */
+.text__green {
+  color: var(--color-green);
+}
+
+.bg_green {
+  background-color: var(--color-green);
+}
+
+.border_green {
+  border-color: var(--color-green);
+}

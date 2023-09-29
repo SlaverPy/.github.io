@@ -1,0 +1,47 @@
+.swiper {
+  background-color: var(--color-white);
+  height: 345px;
+}
+
+.swiper-wrapper {
+  width: 350px; /* Максимальная ширина контейнера (можно настроить по вашему усмотрению) */
+  position: relative; /* Устанавливаем позицию как относительную, чтобы позиционировать кнопки внутри контейнера */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute; /* Позиционируем кнопки абсолютно внутри контейнера */
+  top: 50%; /* Располагаем кнопки по вертикали по центру контейнера */
+  transform: translateY(-50%); /* Корректируем вертикальное выравнивание */
+  z-index: 1; /* Устанавливаем z-index, чтобы кнопки были выше слайдов */
+  padding: 10px; /* Добавляем немного отступов для кнопок (по вашему усмотрению) */
+  cursor: pointer; /* Устанавливаем курсор в виде указателя, чтобы обозначить, что кнопки кликабельны */
+}
+
+.swiper-button-prev {
+  left: 0; /* Располагаем кнопку "назад" слева внутри контейнера */
+  color: var(--color-green);
+}
+
+.swiper-button-next {
+  right: 0; /* Располагаем кнопку "вперед" справа внутри контейнера */
+  color: var(--color-green);
+}
+
+
+.swiper__images {
+  width: 300px;
+  height: 280px;
+}
+
+
+.swiper__text {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+
+.swiper-slide__one {
+  flex-direction: column;
+  align-items: center;
+}
