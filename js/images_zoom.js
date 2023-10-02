@@ -22,13 +22,17 @@ function toggleFullscreen(image) {
   if (zoomClass) {
       image.classList.remove("fullscreen-image");
       overlay.style.display = 'none'; // Скрываем оверлей
+      document.body.style.overflow = 'auto'; // Разблокируем скролл на странице
   } else {
       image.classList.add("fullscreen-image");
       overlay.style.display = 'block'; // Отображаем оверлей
+      document.body.style.overflow = 'hidden'; // Блокируем скролл на странице
   }
 }
 
 // Функция для закрытия полноэкранного режима
 function closeFullscreen() {
     overlay.style.display = 'none'; // Скрываем оверлей
+    var zoo_img = document.querySelector('.fullscreen-image');
+    zoo_img.classList.remove("fullscreen-image");
 }
