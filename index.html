@@ -4,9 +4,91 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Web app</title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <h1>Hello world!</h1>
+  <header>
+    <div class="container header flex">
+      <h1 class="header__title size-xx">События Октября</h1>
+    </div>
+  </header>
+  <main class="container">
+    <ul class="events__list list-reset">
+      <li class="list__item p1">
+        <div class="event__card">
+          <img src="images/event_1.jpeg" alt="Тут был очень офигенный креатив... Но что-то пошло не так" class="event__img">
+          <div class="flex f-center event__title size-x container">
+              <span>Конкурс костюмов: </span>
+              <span>Тыквенный спас!</span>
+          </div>
+          <div class="card__info p1 flex f-column g1">
+            <div class="card__datetime flex f-column g0-5">
+              <div class="flex f-between ">
+                <h3 class="date__title font-text size-x">Дата</h3>
+                <p class="date font-text size-l">31.10</p>
+              </div>
+              <div class="flex f-between">
+                <h3 class="time__title font-text size-x">Время</h3>
+                <p class="time font-text size-l">13:00</p>
+              </div>
+            </div>
+            <div class="card__topic flex f-column g0-5">
+              <div class="flex f-between">
+                <h3 class="topic__title font-text size-x">Тема</h3>
+                <p class="topic__name font-text size-l">Лучший костюм</p>
+              </div>
+              <div class="flex f-between g0-5">
+                <h3 class="topic__speaker font-text size-x">Судья</h3>
+                <p class="speaker font-text size-x">Екатерина Кобзарь</p>
+              </div>
+            </div>
+            <div class="card__description">
+              <p class="description font-text size-x">Приглашаем всех принять участие в конкурсе костюмов,
+                посвященном празднику «Тыквенный Спас». Это отличный способ поделиться своим творчеством,
+                  весело провести время с семьей и друзьями, а также выиграть замечательные призы! </p>
+            </div>
+            <div>
+              <button class="btn-resett btn-accept">
+                <p class="btn-text">Буду участвовать</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="list">
+        <div class="event__card">
+        <img src="images/event_2.jpeg" alt="Тут был очень офигенный креатив... Но что-то пошло не так" class="event__img">
+        <div>
+          <h2 class="event__title"></h2>
+        </div>
+        <div class="card__info">
+          <div class="card__datetime">
+            <h3 class="date__title"></h3>
+            <p class="date"></p>
+            <h3 class="time__title"></h3>
+            <p class="time"></p>
+          </div>
+          <div class="card__topic">
+            <h3 class="topic__speaker"></h3>
+            <p class="speaker"></p>
+            <h3 class="topic__title"></h3>
+            <p class="topic__name"></p>
+          </div>
+          <div class="card__description">
+            <p class="description"></p>
+          </div>
+          <div>
+            <button class="btn-resett btn-accept">
+              <p class="btn-text">Буду участвовать</p>
+            </button>
+          </div>
+        </div>
+      </div>
+      </li>
+    </ul>
+  </main>
 </body>
 </html>
