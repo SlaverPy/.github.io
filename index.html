@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Web app</title>
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
@@ -58,35 +58,46 @@
           </div>
         </div>
       </li>
-      <li class="list">
+      <li class="list__item p1">
         <div class="event__card">
-        <img src="images/event_2.jpeg" alt="Тут был очень офигенный креатив... Но что-то пошло не так" class="event__img">
-        <div>
-          <h2 class="event__title"></h2>
+          <img src="images/event_2.jpeg" alt="Тут был очень офигенный креатив... Но что-то пошло не так" class="event__img">
+          <div class="flex f-center event__title size-x container">
+              <span>Йога: </span>
+          </div>
+          <div class="card__info p1 flex f-column g1">
+            <div class="card__datetime flex f-column g0-5">
+              <div class="flex f-between ">
+                <h3 class="date__title font-text size-x">Дата</h3>
+                <p class="date font-text size-l">Каждую субботу!</p>
+              </div>
+              <div class="flex f-between">
+                <h3 class="time__title font-text size-x">Время</h3>
+                <p class="time font-text size-l">13:00</p>
+              </div>
+            </div>
+            <div class="card__topic flex f-column g0-5">
+              <div class="flex f-between">
+                <h3 class="topic__title font-text size-x">Адресс</h3>
+                <p class="topic__name font-text size-l">Проспект мира, дом кефира</p>
+              </div>
+              <div class="flex f-between g0-5">
+                <h3 class="topic__speaker font-text size-x">Организатор</h3>
+                <p class="speaker font-text size-x">Сен-сей Ву</p>
+              </div>
+            </div>
+            <div class="card__description">
+              <p class="description font-text size-x">Мы рады представить вам новую инициативу,
+                которая поможет нам поддерживать здоровье и гармонию в нашей рабочей жизни.
+                С учетом важности физического и психологического поведения наших сотрудников,
+                мы внедряем бесплатные занятия по субботам .</p>
+            </div>
+            <div>
+              <button class="btn-resett btn-accept">
+                <p class="btn-text">Буду участвовать</p>
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="card__info">
-          <div class="card__datetime">
-            <h3 class="date__title"></h3>
-            <p class="date"></p>
-            <h3 class="time__title"></h3>
-            <p class="time"></p>
-          </div>
-          <div class="card__topic">
-            <h3 class="topic__speaker"></h3>
-            <p class="speaker"></p>
-            <h3 class="topic__title"></h3>
-            <p class="topic__name"></p>
-          </div>
-          <div class="card__description">
-            <p class="description"></p>
-          </div>
-          <div>
-            <button class="btn-resett btn-accept">
-              <p class="btn-text">Буду участвовать</p>
-            </button>
-          </div>
-        </div>
-      </div>
       </li>
     </ul>
   </main>
